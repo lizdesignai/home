@@ -11,12 +11,12 @@
 
 
     <!-- Referência ao CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.', filename='style.css') }}">
 </head>
 <body>
     <!-- LOGO -->
     <header class="logo">
-        <img src="{{ url_for('static', filename='assets/Perfil.png') }}" alt="Liz Design Logo">
+        <img src="{{ url_for('.', filename='./Perfil.png') }}" alt="Liz Design Logo">
         <h1>LizDesign</h1>
     </header>
 
