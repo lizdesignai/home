@@ -9,14 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Behind+The+Nineties&display=swap" rel="stylesheet">
 
-
     <!-- Referência ao CSS -->
-    <link rel="stylesheet" href="{{ url_for('.', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- LOGO -->
     <header class="logo">
-        <img src="{{ url_for('.', filename='./Perfil.png') }}" alt="Liz Design Logo">
+        <img src="Perfil.png" alt="Liz Design Logo">
         <h1>LizDesign</h1>
     </header>
 
@@ -27,184 +26,107 @@
         <p>Me chamo Liz, tenho 20 anos, curso o 5° semestre de Design Gráfico e desde 2023 participei da criação ou reformulação de + de 30 marcas!</p>
     </section>
 
-<!-- REDES SOCIAIS -->
-<section class="redes">
-    <a href="http://Wa.me/75991192128" target="_blank">
-        <img src="{{ url_for('static', filename='assets/whatsapp.png') }}" alt="WhatsApp">
-    </a>
-    <a href="http://Behance.net/lizsacramento2" target="_blank">
-        <img src="{{ url_for('static', filename='assets/behance.png') }}" alt="Behance">
-    </a>
-    <a href="https://pin.it/4ji8l0q0P" target="_blank">
-        <img src="{{ url_for('static', filename='assets/pinterest.png') }}" alt="Pinterest">
-    </a>
-    <a href="http://Instagram.com/lizdesign.ai" target="_blank">
-        <img src="{{ url_for('static', filename='assets/instagram.png') }}" alt="Instagram">
-    </a>
-    <a href="https://www.tiktok.com/@lizdesign.ai" target="_blank">
-        <img src="{{ url_for('static', filename='assets/tiktok.png') }}" alt="TikTok">
-    </a>
-</section>
+    <!-- REDES SOCIAIS -->
+    <section class="redes">
+        <a href="http://Wa.me/75991192128" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="http://Behance.net/lizsacramento2" target="_blank">
+            <img src="behance.png" alt="Behance">
+        </a>
+        <a href="https://pin.it/4ji8l0q0P" target="_blank">
+            <img src="pinterest.png" alt="Pinterest">
+        </a>
+        <a href="http://Instagram.com/lizdesign.ai" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@lizdesign.ai" target="_blank">
+            <img src="tiktok.png" alt="TikTok">
+        </a>
+    </section>
 
-
-<section class="catalogo">
-    <h2>Catálogo</h2>
-    <p>Conheça os meus serviços</p>
-    <div class="slider">
-        <div class="slides">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <p>Branding e Identidade Visual</p>
-                <img src="{{ url_for('static', filename='assets/Catalógo 1.png') }}" alt="Catálogo 1">
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide">
-                <p>Gestão de Instagram</p>
-                <img src="{{ url_for('static', filename='assets/Catalógo 2.png') }}" alt="Catálogo 2">
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide">
-                <p>Papelaria Corporativa</p>
-                <img src="{{ url_for('static', filename='assets/Catalógo 3.png') }}" alt="Catálogo 3">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="orçamento"></section>
-<!-- Solicite orçamento -->
-<p><a href="http://Wa.me/75991192128" class="orcamento" target="_blank">Clique aqui e solicite seu orçamento</a></p>
-</section>
-
-<!-- PORTFÓLIO -->
-<section class="portfolio">
-    <div class="portfolio-bg"></div>
-    <h1>Portfólio</h1>
-    <p class="portfolio-description">Conheça alguns dos projetos que desenvolvi. Você pode conferi-los na íntegra acessando meu behance.</p> <!-- Parágrafo adicionado -->
-    
-    <h2 class="portfolio-subtitle">Gestão do Instagram</h2> <!-- Novo h2 adicionado -->
-
-    <div class="slider-portfolio">
-        <div class="slides-portfolio">
-            <!-- Slide 1 -->
-            <div class="slide-portfolio active">
-                <img src="{{ url_for('static', filename='assets/01.png') }}" alt="Portfólio 1">
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide-portfolio">
-                <img src="{{ url_for('static', filename='assets/60 segundos.png') }}" alt="Portfólio 2">
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide-portfolio">
-                <img src="{{ url_for('static', filename='assets/resultados diferentes.png') }}" alt="Portfólio 3">
+    <section class="catalogo">
+        <h2>Catálogo</h2>
+        <p>Conheça os meus serviços</p>
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <p>Branding e Identidade Visual</p>
+                    <img src="Catalógo 1.png" alt="Catálogo 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <p>Gestão de Instagram</p>
+                    <img src="Catalógo 2.png" alt="Catálogo 2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <p>Papelaria Corporativa</p>
+                    <img src="Catalógo 3.png" alt="Catálogo 3">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PORTFÓLIO3 -->
-<section class="portfolio3">
-    <h2 class="portfolio-subtitle">Identidade Visual</h2> <!-- Novo título H2 -->
+    <section class="orçamento"></section>
+    <!-- Solicite orçamento -->
+    <p><a href="http://Wa.me/75991192128" class="orcamento" target="_blank">Clique aqui e solicite seu orçamento</a></p>
 
-    <div class="slider-portfolio">
-        <div class="slides-portfolio">
-            <!-- Slide 1 -->
-            <div class="slide-portfolio">
-                <img src="{{ url_for('static', filename='assets/Broches.png') }}" alt="Portfólio 1">
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide-portfolio">
-                <img src="{{ url_for('static', filename='assets/Cópia de 05.png') }}" alt="Portfólio 2">
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide-portfolio">
-                <img src="{{ url_for('static', filename='assets/eduarda.png') }}" alt="Portfólio 3">
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide-portfolio">
-                <img src="{{ url_for('static', filename='assets/Paper Pressed PSD Logo Mockup.png') }}" alt="Portfólio 3">
+    <!-- PORTFÓLIO -->
+    <section class="portfolio">
+        <div class="portfolio-bg"></div>
+        <h1>Portfólio</h1>
+        <p class="portfolio-description">Conheça alguns dos projetos que desenvolvi. Você pode conferi-los na íntegra acessando meu behance.</p>
+        <h2 class="portfolio-subtitle">Gestão do Instagram</h2>
+        <div class="slider-portfolio">
+            <div class="slides-portfolio">
+                <div class="slide-portfolio active">
+                    <img src="01.png" alt="Portfólio 1">
+                </div>
+                <div class="slide-portfolio">
+                    <img src="60 segundos.png" alt="Portfólio 2">
+                </div>
+                <div class="slide-portfolio">
+                    <img src="resultados diferentes.png" alt="Portfólio 3">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Chamada para ação -->
-    <div class="portfolio-cta">
-        <p>Quer conhecer o portfólio completo e ver estes projetos na íntegra?</p>
-        <a href="https://www.behance.net/lizsacramento2" class="portfolio-button" target="_blank">Acesse o Portfólio Completo Agora</a>
-    </div>
-</section>
+    <section class="portfolio3">
+        <h2 class="portfolio-subtitle">Identidade Visual</h2>
+        <div class="slider-portfolio">
+            <div class="slides-portfolio">
+                <div class="slide-portfolio">
+                    <img src="Broches.png" alt="Portfólio 1">
+                </div>
+                <div class="slide-portfolio">
+                    <img src="Cópia de 05.png" alt="Portfólio 2">
+                </div>
+                <div class="slide-portfolio">
+                    <img src="eduarda.png" alt="Portfólio 3">
+                </div>
+                <div class="slide-portfolio">
+                    <img src="Paper Pressed PSD Logo Mockup.png" alt="Portfólio 4">
+                </div>
+            </div>
+        </div>
 
-<!-- RODAPÉ -->
-<footer class="footer">
-    <div class="footer-content">
-        <img src="{{ url_for('static', filename='assets/Perfil.png') }}" alt="Foto de Perfil" class="profile-pic">
-        <p class="footer-name">Liz Design</p>
-        <p class="footer-rights">Todos os direitos reservados</p>
-    </div>
-</footer>
+        <div class="portfolio-cta">
+            <p>Quer conhecer o portfólio completo e ver estes projetos na íntegra?</p>
+            <a href="https://www.behance.net/lizsacramento2" class="portfolio-button" target="_blank">Acesse o Portfólio Completo Agora</a>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="Perfil.png" alt="Foto de Perfil" class="profile-pic">
+            <p class="footer-name">Liz Design</p>
+            <p class="footer-rights">Todos os direitos reservados</p>
+        </div>
+    </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Função para configurar o slider
-    function setupSlider(sliderSelector) {
-        const slider = document.querySelector(sliderSelector);
-        const slides = slider.querySelector('.slides-portfolio');
-        const slideItems = slider.querySelectorAll('.slide-portfolio');
-        const totalSlides = slideItems.length;
-
-        let currentIndex = 0;
-
-        // Função para alternar os slides automaticamente
-        function showNextSlide() {
-            currentIndex = (currentIndex + 1) % totalSlides; // Incrementa e reinicia no início após o último slide
-            const offset = -currentIndex * 100; // Calcula o deslocamento horizontal
-            slides.style.transform = `translateX(${offset}%)`;
-        }
-
-        // Configura estilo inicial para permitir o deslocamento
-        slides.style.display = 'flex';
-        slides.style.transition = 'transform 0.5s ease-in-out';
-
-        // Inicia o loop automático
-        setInterval(showNextSlide, 3000); // Alterna os slides a cada 3 segundos
-    }
-
-    // Inicializa os sliders para as diferentes seções
-    setupSlider('.portfolio .slider-portfolio'); // Slider da seção "portfolio"
-    setupSlider('.portfolio3 .slider-portfolio'); // Slider da seção "portfolio3"
-});
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    function setupSlider(sliderSelector) {
-        const slider = document.querySelector(sliderSelector);
-        const slides = slider.querySelector('.slides');
-        const slideItems = slider.querySelectorAll('.slide');
-        const totalSlides = slideItems.length;
-
-        let currentIndex = 0;
-
-        // Função para alternar slides automaticamente
-        function showNextSlide() {
-            currentIndex = (currentIndex + 1) % totalSlides; // Incrementa e reinicia no início após o último slide
-            const offset = -currentIndex * 100; // Calcula o deslocamento horizontal
-            slides.style.transform = `translateX(${offset}%)`;
-        }
-
-        // Configura estilo inicial para permitir o deslocamento
-        slides.style.display = 'flex';
-        slides.style.transition = 'transform 0.5s ease-in-out';
-
-        // Inicia o loop automático
-        setInterval(showNextSlide, 3000); // Alterna os slides a cada 3 segundos
-    }
-
-    // Inicializa o slider para a seção Catálogo
-    setupSlider('.catalogo .slider');
-});
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
