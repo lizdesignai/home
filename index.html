@@ -127,6 +127,66 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Função para configurar o slider
+    function setupSlider(sliderSelector) {
+        const slider = document.querySelector(sliderSelector);
+        const slides = slider.querySelector('.slides-portfolio');
+        const slideItems = slider.querySelectorAll('.slide-portfolio');
+        const totalSlides = slideItems.length;
+
+        let currentIndex = 0;
+
+        // Função para alternar os slides automaticamente
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides; // Incrementa e reinicia no início após o último slide
+            const offset = -currentIndex * 100; // Calcula o deslocamento horizontal
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Configura estilo inicial para permitir o deslocamento
+        slides.style.display = 'flex';
+        slides.style.transition = 'transform 0.5s ease-in-out';
+
+        // Inicia o loop automático
+        setInterval(showNextSlide, 3000); // Alterna os slides a cada 3 segundos
+    }
+
+    // Inicializa os sliders para as diferentes seções
+    setupSlider('.portfolio .slider-portfolio'); // Slider da seção "portfolio"
+    setupSlider('.portfolio3 .slider-portfolio'); // Slider da seção "portfolio3"
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    function setupSlider(sliderSelector) {
+        const slider = document.querySelector(sliderSelector);
+        const slides = slider.querySelector('.slides');
+        const slideItems = slider.querySelectorAll('.slide');
+        const totalSlides = slideItems.length;
+
+        let currentIndex = 0;
+
+        // Função para alternar slides automaticamente
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides; // Incrementa e reinicia no início após o último slide
+            const offset = -currentIndex * 100; // Calcula o deslocamento horizontal
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Configura estilo inicial para permitir o deslocamento
+        slides.style.display = 'flex';
+        slides.style.transition = 'transform 0.5s ease-in-out';
+
+        // Inicia o loop automático
+        setInterval(showNextSlide, 3000); // Alterna os slides a cada 3 segundos
+    }
+
+    // Inicializa o slider para a seção Catálogo
+    setupSlider('.catalogo .slider');
+});
+    </script>
 </body>
 </html>
