@@ -343,6 +343,7 @@ body {
 .footer-name {
     font-family: 'Behind The Nineties', serif;
     font-size: 1.5rem;
+    font-style: italic; /* Aplica o estilo itálico */
     margin-top: -20px;
     color: #ff6685; /* Cor do texto */
     text-align: center; /* Garante que o texto do nome seja centralizado */
